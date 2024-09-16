@@ -1,1 +1,1 @@
-web: gunicorn SistemaInventarios.wsgi
+web: python manage.py migrate && gunicorn SistemaInventarios.wsgi
