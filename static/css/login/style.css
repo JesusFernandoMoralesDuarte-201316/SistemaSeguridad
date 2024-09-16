@@ -1,0 +1,79 @@
+/* ESTILOS GENERALES */
+
+:root{
+    --border: 1px solid #000;
+}
+
+
+body{
+    display: flex;    
+}
+
+.oculto{
+    display: none;
+    visibility: hidden;
+}
+
+/* ESTILOS IMAGEN LOGIN */
+.ImgFondo{
+    position: relative;
+    width: 60%;
+    height: 100vh;
+}
+
+.filtroOscuro{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.33);
+}
+
+.ImgFondo img{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+/*  ESTILOS FORMULARIO */
+
+.ContenedorFormulario{
+    width: 40%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* border: 1px solid #000; */
+    padding: 50px;
+}
+
+
+.logo{
+    width: 148px;
+    height: 148px;
+    /* border: var(--border); */
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* border: 1px solid rgba(0, 0, 0, 0.50); */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.btn{
+    margin-top: 20px;
+    padding: 15px;
+}
