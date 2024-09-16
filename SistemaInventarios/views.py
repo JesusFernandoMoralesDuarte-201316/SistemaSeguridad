@@ -1,15 +1,17 @@
 from django.shortcuts import render,redirect
+from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 
-
+@login_required
 def Home(request):
     return render(request,'index.html')
 
+@csrf_exempt
 def UsuarioInicioSesion(request):
     return render(request, 'Login.html')
 
-
+@csrf_exempt
 def login_usuario(request):
     if request.method == 'POST':
         username = request.POST.get('username')
@@ -23,7 +25,7 @@ def login_usuario(request):
     else:
         return redirect('login')
 
-
+@csrf_exempt
 @login_required
 def logout_usuario(request):
     logout(request)
