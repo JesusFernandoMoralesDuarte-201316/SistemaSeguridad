@@ -1,1 +1,1 @@
-web: gunicorn SistemaInventarios.wsgi
+web: gunicorn SistemaInventarios:app
