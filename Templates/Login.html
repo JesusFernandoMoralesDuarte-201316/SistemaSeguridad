@@ -21,7 +21,8 @@
             <img src="{%static 'img/Logo.png'%}" alt="">
         </div>
         
-        <form id="Formulario" action="loginUsuario" method="POST" class="p-4 m-2  text-start ">{% csrf_token %}
+        <form id="Formulario" action="loginUsuario" method="POST" class="p-4 m-2  text-start ">
+            {% csrf_token %}
             <div id="contenedorEmail" class="mb-3">
                 <ion-icon name="person-circle-outline"></ion-icon>
                 <label for="emailInput" class="form-label">User name</label>
